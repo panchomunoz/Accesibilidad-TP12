@@ -1,0 +1,360 @@
+@keyframes opa{
+	0%{	
+		
+
+
+	}
+
+	100%{
+
+		transform: scale(1.1); 
+		opacity: 1;  
+		box-shadow: 8px 11px 11px 0.8px #111;
+		
+
+	}
+}
+
+@keyframes btn{
+	0%{ opacity: 0.31; color: black;
+
+
+	}
+
+	100%{ 
+		background-color:#66FF66; 
+		opacity: 1;padding: 14px;
+		margin-top: 15px; 
+		color: black;
+
+	}
+}
+
+
+
+
+
+body {
+	background-color: black;
+}
+h1 {
+	font-family: 'Noto Serif', serif;
+	color: white;
+	font-size: 39pt;
+	text-align: center;
+}
+.welcome {
+	margin-bottom: 50px;
+	
+}
+
+header {
+	background-image: url(../img/bg.jpg);
+	background-size: 100% 400;
+	background-repeat: no-repeat;
+	height: 600px;
+}
+.welcome h1{
+	margin-top: -440px;
+	
+
+}
+nav {
+	height: 55px;
+	width: 100%;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 0px;
+	border-bottom: 1px dashed white;
+	z-index: 3;
+
+}
+
+ul {
+	margin-top: -15px;
+	float: right;
+	height: 55px;
+	min-width: 560px;
+
+
+
+
+}
+
+li{
+	list-style-type: none;
+	font-family: 'Noto Serif', serif;
+	font-weight: 300;
+	font-size: 15pt;
+	text-align: center;
+	margin-left: 0px;
+	float: left;
+	width: 110px;
+
+
+	
+}
+a {
+	text-decoration: none;
+	color: #8CF208;
+}
+.boton{
+	
+	padding: 14px;
+	margin-top: 15px;
+}
+.boton:hover {
+	animation-name: btn;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode:forwards;
+}
+
+
+
+
+.spadre {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	z-index: 1;
+	margin-top: 110px;
+
+}
+.spadre article {
+	background-color: #000;
+	opacity: 0.4;
+	min-height: 250px;
+	background-position: center;
+
+}
+.spadre article:hover {
+	
+	
+	animation-name: opa;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode:forwards;
+	animation-timing-function: ease-out;
+}
+.shijo1 {
+	
+	flex-grow:1;
+	background-color: white;
+	background-image: url(../img/port3.jpg);
+	background-size: 100%;
+	background-repeat: repeat-y;
+	padding: 8px;
+}
+.shijo2 {
+	
+	flex-grow:1;
+	background-color: green;
+	background-image: url(../img/port2.jpg);
+	background-size: 100%;
+	background-repeat: repeat-y;
+	padding: 8px;
+}
+.shijo3 {
+	
+	flex-grow:1;
+	background-color: gray;
+	background-image: url(../img/port1.jpg);
+	background-size: 100%;
+	background-repeat: repeat-y;
+	padding: 8px;
+}
+.shijo4 {
+	
+	flex-grow:1;
+	background-color: green;
+	background-image: url(../img/port4.jpg);
+	background-position: top;
+	background-size: 100%;
+	
+	background-repeat: no-repeat;
+	padding: 8px;
+}
+.logotipo {
+	width: 140px;
+	height: 50px;
+	background-image: url(../img/logo.png);
+	background-size: 100%;
+	float: left;
+	margin-top: 4px;
+
+}		
+
+.flogotipo {
+
+	width: 120px;
+	height: 48px;
+	background-image: url(../img/logofoot.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	float: right;
+	margin-top: 0px;
+	margin-left: 15px;
+	padding-bottom: 40px;
+	
+
+}
+
+
+hr {
+	margin-top: 200px;
+	margin-bottom: 50px;
+}
+
+footer {
+	border-top: 1px dashed white;
+	background-color: #141414;
+	height: 80px;
+	margin-top: 30px;
+	padding: 20px;
+	z-index: 1;
+}
+footer p {
+	margin-top: -1px;
+	font-family: 'Noto Serif', serif;
+	color: white;
+	font-size: 8pt;
+	font-weight: 200;
+	text-align: center;
+	text-shadow: 3px 3px #000;
+	text-align: right;
+
+}
+
+
+footer input {
+	margin-top: -4px;
+	background-color: black;
+	border: 1px dashed white;
+	color: white;
+	height: 26px;
+
+}
+
+
+.spadre h3 {
+	font-family: 'Noto Serif', serif;
+	color: white;
+	font-size: 29pt;
+	text-align: center;
+	text-shadow: 3px 3px #000;
+
+
+}
+
+/*responsive menu*/
+
+.dropbtn {
+   
+    font-size: 16px;
+	background-color: black;
+	border: none;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    background-image: url(../img/menu.png);
+    background-size: 55px;
+    
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:active .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Change the background color of the dropdown button 
+when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+   
+
+}
+
+
+.foota {
+
+	width: 42%;
+	float: left;
+	text-align: left;
+	margin-right: 10px;
+
+
+}
+
+.footb {
+	width: 46%;
+	float:right;
+	margin-left: 10px;
+
+}
+.footb p{
+
+	text-align: left;
+}
+
+
+
+@media screen and (max-width: 740px) {
+	
+	
+	.hiden {
+		display: none;
+
+		}
+	li {
+	max-width: 160px;
+		}
+	.imgmenu {
+		display: inline;
+	}
+}
+
+@media screen and (min-width: 740px) {
+
+	
+	.dropdown {
+		display: none;
+
+		}
+
+}
